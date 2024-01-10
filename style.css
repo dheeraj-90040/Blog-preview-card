@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+:root {
+    --primary--: hsl(47, 88%, 63%);
+    --nut_1--: hsl(0, 0%, 100%);
+    --nut_2--: hsl(0, 0%, 7%);
+    --nut_3--: hsl(0, 0%, 50%);
+    --font--: 'Figtree', sans-serif;
+}
+
+.container {
+    background-color: var(--primary--);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box {
+    position: relative;
+    background-color: var(--nut_1--);
+    overflow: hidden;
+    height: 58vh;
+    width: 22%;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    box-shadow: 6 px 6px 0 var(--nut_2--);
+    box-shadow: 6px 6px 0 var(--nut_2--);
+}
+
+.container .box .wrapper {
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.container .box .poster {
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    transition: scale .4s;
+}
+
+.container .box:hover .poster {
+    scale: 120%;
+}
+
+.container .box .tag {
+    font-size: 12px;
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 2px;
+    font-weight: 800;
+    margin: 5px 0;
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--primary--);
+}
+
+.container .box .date {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--nut_2--);
+    margin: 5px 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.container .box h4 {
+    font-size: 18px;
+    word-spacing: 2px;
+    font-weight: 800;
+    font-family: 'Figtree', sans-serif;
+}
+
+.container .box .p2 {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--nut_3--);
+    line-height: 20px;
+    width: 260px;
+    margin: 10px 0;
+    font-family: 'Figtree', sans-serif;
+    word-wrap: break-word;
+}
+
+
+
+.container .box .profile .name {
+    font-size: 12px;
+    font-weight: 800;
+    word-spacing: 2px;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.container .box .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .box .profile .pic {
+    width: 30px;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
